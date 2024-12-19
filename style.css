@@ -30,13 +30,21 @@ body {
   color: var(--bg-colour);
   border: none;
 }
-
+nav {
+}
 .flex {
   display: flex;
   align-items: center;
 }
 .desktop-nav {
   margin-top: 15px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #f2f7f8;
+  height: 70px;
+  margin-top: 0%;
 }
 .nav-logo {
   width: 150px;
@@ -141,31 +149,34 @@ body {
   margin-right: 5px;
 }
 .woman-icon {
+  width: 400px;
+  height: 400px;
   margin-top: 60px;
-  .tip{
+  margin-inline: auto;
+  .tip {
     width: 170px;
     translate: 250px -400px;
-     }
-      .pot{
-        width: 200px;
-        translate: -230px -350px;
-      }
-      .top{
-        width: 170px;
-        translate: -50px -300px;
-      }
-      .hop{
-        width: 200px;
-        translate: 50px -300px;
-      }
-      .pop{
-        width: 170px;
-        translate: -50px -230px;
-      }
-      .sip{
-        width: 170px;
-        translate: 50px -200px;
-      }
+  }
+  .pot {
+    width: 200px;
+    translate: -230px -350px;
+  }
+  .top {
+    width: 170px;
+    translate: -50px -300px;
+  }
+  .hop {
+    width: 200px;
+    translate: 50px -300px;
+  }
+  .pop {
+    width: 170px;
+    translate: -50px -230px;
+  }
+  .sip {
+    width: 170px;
+    translate: 50px -200px;
+  }
 }
 .woman-icon img {
   width: 400px;
@@ -180,7 +191,7 @@ body {
   margin-bottom: 100px;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 1150px) {
   .hero-btn {
     /* justify-self: left; n */
     margin-left: 10px;
@@ -217,31 +228,31 @@ body {
     margin-top: 60px;
     width: 900px;
     margin-bottom: -200px;
-    .tip{
+    .tip {
       width: 170px;
       translate: 250px -500px;
-       }
-        .pot{
-          width: 200px;
-          translate: -260px -450px;
-        }
-        .top{
-          width: 170px;
-          translate: -50px -500px;
-        }
-        .hop{
-          width: 200px;
-          translate: 50px -500px;
-        }
-        .pop{
-          width: 170px;
-          translate: -50px -530px;
-        }
-        .sip{
-          width: 170px;
-          translate: 50px -500px;
-          /* margin-bottom: -500px; */
-        }
+    }
+    .pot {
+      width: 200px;
+      translate: -260px -450px;
+    }
+    .top {
+      width: 170px;
+      translate: -50px -500px;
+    }
+    .hop {
+      width: 200px;
+      translate: 50px -500px;
+    }
+    .pop {
+      width: 170px;
+      translate: -50px -530px;
+    }
+    .sip {
+      width: 170px;
+      translate: 50px -500px;
+      /* margin-bottom: -500px; */
+    }
   }
   .woman-icon img {
     width: 400px;
@@ -290,19 +301,19 @@ body {
     font-size: 1.7rem;
     color: #0f60d6;
   }
-  .pig{
-    color:#2295F2 ;
+  .pig {
+    color: #2295f2;
   }
-  .big{
+  .big {
     color: #39c277;
   }
-  .fig{
+  .fig {
     color: #e5489b;
   }
-  .gig{
+  .gig {
     color: black;
   }
-  .rig{
+  .rig {
     color: #ff783c;
   }
 
@@ -315,7 +326,6 @@ body {
     margin-top: 200px;
     color: #0f60d6;
   }
-  
 }
 .features-card:hover {
   h3,
@@ -433,7 +443,6 @@ body {
     justify-content: space-around;
     padding-inline: 250px;
     margin-left: -100px;
-   
   }
   .invest-header {
     h2 {
@@ -444,7 +453,6 @@ body {
       font-weight: 400;
     }
   }
-  
 }
 .saver {
   padding: 80px 0px;
@@ -528,84 +536,82 @@ body {
   }
 }
 @keyframes anim1 {
-  from{
+  from {
     background-color: red;
-
   }
-  to{
+  to {
     background-color: blue;
   }
 }
 @keyframes anim2 {
-  0%{
+  0% {
     background-color: red;
   }
-  33%{background-color: #0f60d6;}
-  66%{
+  33% {
+    background-color: #0f60d6;
+  }
+  66% {
     background-color: yellow;
   }
-  100%{
+  100% {
     background-color: green;
   }
 }
 @keyframes anim3 {
-  from{
+  from {
     translate: 0 200px;
   }
-  to{
+  to {
     translate: 0 0;
   }
- 
 }
 @keyframes anim4 {
-
-   to{
-rotate: 690deg;
-   }
+  to {
+    rotate: 690deg;
+  }
 }
-.animate-one{
-animation: anim4;
-animation-duration: 4s;
-animation-timing-function: linear;
-animation-delay: 2s;
-animation-iteration-count: infinite;
+.animate-one {
+  animation: anim4;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
 }
-.testimony-imag{
-  margin-top:80px;
+.testimony-imag {
+  margin-top: 80px;
   text-align: center;
-  img{
+  img {
     width: 350px;
   }
 }
-.featured{
+.featured {
   justify-content: space-around;
 }
-.feature-container{
+.feature-container {
   text-align: center;
 }
-.featured-top{
-  h1{
+.featured-top {
+  h1 {
     font-size: 35px;
   }
 }
-.feature-images{
+.feature-images {
   display: flex;
   align-items: center;
   gap: 70px;
-  
 }
-.feature-image{
+.feature-image {
   text-align: center;
-  img{
+  img {
     width: 180px;
   }
-  .fat{
+  .fat {
     width: 80px;
   }
-  .fot{
+  .fot {
     width: 110px;
   }
-  .pat{
+  .pat {
     width: 150px;
   }
 }
